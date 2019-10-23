@@ -1,0 +1,37 @@
+/* Color Schemes
+Dark blue:
+Lighest blue #578ED1
+Ligher  blue #326FB8
+Dark 	blue #26548C
+Darker  blue #183454
+Darkest blue #0E202F
+
+Orange:
+Lightest Orange #FFCF9E
+Lighter  Orange #FFAD5C
+Basic 	 Orange #FF8F20
+Darker 	 Orange #E67300
+Darkest  Orange #D16900
+*/
+
+[id^="a_"]:hover {
+    text-decoration: none;
+}
+
+td {
+    text-align: center;
+}
+
+.ToC a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+#HM li {
+    margin-top: 20px;
+}

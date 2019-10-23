@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Faction Showcase
+        </title>
+        <meta name="description" 
+        content="An interactive exploration of 4 fictional fantasy factions">
+        <meta name="keywords" content="animation, faction, interactive">
+        <meta name="author" content="Luke Seeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/icon_opt.jpg">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/animate_style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src="assets/nav_script.js"></script>
+        <script src="assets/animate_script.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <header class="col-12 col-m-12 col-m-12">
+                <img src="assets/keyboard_header_opt.jpg" alt="Gaming Keyboard"
+                height="200" width="150"> 
+                <p>Gaming <span>& Programming</span> Emporium</p>
+                <h1><span>Animated</span> Faction Showcase</h1>
+            </header>
+        </div>
+        
+        <div class="row">
+            <nav class="col-2 col-m-3">
+                <ul>
+                    <li><a href="index.html" 
+                    title="Go to the Home page of Gaming Emporium">Home</a></li>
+                    <li><a href="favoritegames.html" 
+                    title="Go to Gaming Emporium's page on my Favorite Games"> 
+                    Favorite Games</a></li>
+                    <li><a href="publishing.html" 
+                    title="Go to Gaming Emporium's tutorial on publishing websites on Icarus">
+                    How to Publish</a></li>
+                    <li>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                            <a href="css.html" 
+                            title="Go to Gaming Emporium's CSS tutorial">
+                            Adding CSS</a>
+                            <a href="story.html" 
+                            title="Go to Gaming Emporium's Interactive Story">
+                            Interactive Story</a>
+                            <a href="slideshow.html" 
+                            title="Go to Gaming Emporium's Artwork Showcase">
+                            Artwork Showcase</a>
+                            <a href="form.html" 
+                            title="Go to Gaming Emporium's Gaming Survey">
+                            Gaming Survey</a>
+                            <a href="animate.html" 
+                            title="Go to Gaming Emporium's Animated Faction Showcase">
+                            Faction Showcase</a>
+                        </div>
+                        <button id="navButton">More</button> 
+                    </div>
+                    </li>
+                </ul>
+                <div></div>
+            </nav>
+            <main class="col-10 col-m-9">
+                <div id="factionNav" class="row">
+                    <div class="col-3 factionTab" id="sylvenTab">
+                        <div>
+                            <img src="assets/sylven_icon_opt.png" 
+                            alt="Gold Flower" height="100" width="100">
+                        </div>
+                    </div>
+                
+                    <div class="col-3 factionTab" id="arcanumTab">
+                            <div>
+                                <img src="assets/arcanum_icon_opt.png" 
+                                alt="Silver Radial" height="100" width="100">
+                            </div>
+                        </div>
+                    <div class="col-3 factionTab" id="imperiumTab">
+                            <div>
+                                <img src="assets/imperium_icon_opt.png" 
+                                alt="Steel Cog and Hammer" height="100" 
+                                width="82">
+                            </div>
+                        </div>
+                    <div class="col-3 factionTab" id="steelTab">
+                        <div>
+                            <img src="assets/black_steel_icon_opt.png" 
+                            alt="Crossed red swords" height="100" width="92">
+                        </div>
+                    </div>
+                </div>
+                <div id="factionAnimations">
+                    <div id="sylvenAnimation">
+                        <div id="slybox1a">*</div>
+                        <div id="slybox1b">*</div>
+                        <div id="slybox2a">*</div>
+                        <div id="slybox2b">*</div>
+                        <div id="slybox3a">*</div>
+                        <div id="slybox3b">*</div>
+                        <div id="slybox4a">*</div>
+                        <div id="slybox4b">*</div>
+                        <div id="slybox5a">*</div>
+                        <div id="slybox5b">*</div>
+                        <div id="slybox6a">*</div>
+                        <div id="slybox6b">*</div>
+                        <div id="slybox7a">*</div>
+                        <div id="slybox7b">*</div>
+                        <div id="slybox8a">*</div>
+                        <div id="slybox8b">*</div>
+                        <div id="slybox9a">*</div>
+                        <div id="slybox9b">*</div>
+                        <div id="slybox10a">*</div>
+                        <div id="slybox10b">*</div>
+                        <img src="assets/sylven_opt.png" alt="Gold Flower" 
+                        width="500" height="500">
+                    </div>
+                    <div id="arcanumAnimation">
+                        <div id="arcbox1">*</div>
+                        <div id="arcbox2">*</div>
+                        <div id="arcbox3">*</div>
+                        <img src="assets/radial_flare.png" alt="flare" 
+                        width="500" height="500" id="arcflare">
+                        <img src="assets/arcanum_opt.png" alt="Silver Radial" 
+                        width="500" height="500">
+                    </div>
+                    <div id="imperiumAnimation">
+                        <div class="impNo" id="impbox0">*</div>
+                        <div class="impNo" id="impbox1">*</div>
+                        <div class="impNo" id="impbox2">*</div>
+                        <div class="impNo" id="impbox3">*</div>
+                        <div class="impNo" id="impbox4">*</div>
+                        <div class="impNo" id="impbox5">*</div>
+                        <div class="impNo" id="impbox6">*</div>
+                        <div class="impNo" id="impbox7">*</div>
+                        <div class="impNo" id="impbox8">*</div>
+                        <div class="impNo" id="impbox9">*</div>
+                        <div class="impNo" id="impbox10">*</div>
+                        <div class="impNo" id="impbox11">*</div>
+                        <img src="assets/imperium_opt.png" 
+                        alt="Steel Cog and Hammer" width="410" height="500">
+                    </div>
+                    <div id="steelAnimation">
+                        <div id="steelbox0">*</div>
+                        <div id="steelbox1">*</div>
+                        <div id="steelbox2">*</div>
+                        <div id="steelbox3">*</div>
+                        <div id="steelbox4">*</div>
+                        <div id="steelbox5">*</div>
+                        <div id="steelbox6">*</div>
+                        <div id="steelbox7">*</div>
+                        <div id="steelbox8">*</div>
+                        <div id="steelbox9">*</div>
+                        <div id="steelbox10">*</div>
+                        <div id="steelbox11">*</div>
+                        <img src="assets/black_steel_opt.png" 
+                        alt="Crossed red swords" width="461" height="500">
+                    </div>
+                </div>
+                <div id="factionInfo">
+                    <div id="choose">
+                        <h2>Select a Faction</h2>
+                        <p>
+                            There are 4 factions to pick from above. You may 
+                            click on the icons above to show an animated icon, 
+                            as well as more information on the cultures of
+                            these factions, a bit of history, and their values.
+                        </p>
+                    </div>
+                    <div id="sylvenInfo">
+                        <h2>Sylven Republic</h2>
+                        <p>
+                            The Sylvan Republic is a land of lush forests, 
+                            rivers, and populated by all kinds of fey. Their 
+                            culture is built upon their reverence to nature, 
+                            as well as their power.  Their religious devotion to
+                            nature has granted the Sylvan Republic the powers of 
+                            nature. The republic has many druids, shamans, and 
+                            other powerful fey creatures leading its armies, all
+                            of which revere the forest and live simple lives.
+                        </p>
+                        <p>
+                            Most of the lands inside the Sylvan Republic is an 
+                            untamed wilderness, civilization has barely touched 
+                            these lands, though there are a few small 
+                            settlements, as most of the population are fey, the
+                            need for settlements is minimal. With this fact in 
+                            hand, these lands prove a difficult place to 
+                            conquer, as the fey use their powers of illusions 
+                            and nature to keep potential threats at bay. Though
+                            the fey can call upon the more dangerous forces of
+                            nature when the situation grows dire. Such as 
+                            summoning powerful beasts, or even natural 
+                            disasters.
+                        </p>
+                    </div>
+                    <div id="arcanumInfo">
+                        <h2>The Arcanum Technocracy</h2>
+                        <p>
+                            The Arcanum is a land of wizards and spell crafters,
+                            who revere the pursuit of knowledge in all its 
+                            forms. Their lands are dotted with universities and
+                            libraries, the land is dotted in many towers 
+                            reaching high into the skies. The wizards of the 
+                            Arcanum wield the raw magical energy of the world, 
+                            as well as the powers of alchemy. They forgo the 
+                            heavy machinery of the Imperium for alchemical 
+                            enchantments that afford the same purposes. The 
+                            wizards of the Arcanum are not to be trifled with. 
+                        </p>
+                        <p>
+                            The Arcanum’s real power is brought by harnessing 
+                            the power of other dimensions. Their lands are home 
+                            to a rift, a place where the energies of other 
+                            dimensions seep in, along with these other realm’s
+                            powerful magical creatures. Harnessing these 
+                            energies have given the Arcanum great power, and 
+                            their alchemists have mastered distillation of this 
+                            raw magical energy.
+                        </p>
+                    </div>
+                    <div id="imperiumInfo">
+                        <h2>The Imperium</h2>
+                        <p>
+                            The Imperium is a powerful war machine, built on 
+                            powerful machines and technology. Their lands are 
+                            dotted by soot spewing machines and factories 
+                            fueling their imperial war machine. But with their 
+                            powerful technology, they wield powerful weapons, 
+                            such as machine guns, tanks, and airplanes, but they
+                            also have towering walkers lumbering on the 
+                            battlefield, some look more like ships on land. The 
+                            Imperium is a military state, with many soldiers 
+                            trained with unresolved discipline. 
+                        </p>
+                        <p>
+                            The Imperium’s war machine is matched only by its 
+                            cunning and ambitious ruler. The Imperium looks to 
+                            rid the lands of the dangerous orc clans once and 
+                            for all, as well as ending the undead menace. But 
+                            doing so requires time and calculated skirmishes, to
+                            weaken the clans. Though this is a long and tedious 
+                            process, as a full-scale war would not end well, as 
+                            it is obvious that once the Imperium has claimed the
+                            Black Steel Clans in the south, they will move on to
+                            try and claim the rest of the lands.
+                        </p>
+                    </div>
+                    <div id="steelInfo">
+                        <h2>The Black Steel Clans</h2>
+                        <p>
+                            The Black Steel Clans are a land of barbaric clans 
+                            of Orcs, goblins, and the undead. The nomadic tribes
+                            constantly wander their harsh and tainted lands, 
+                            seeking food from their volcanic lands. While most 
+                            of the time, the clans are more occupied with 
+                            fighting amongst themselves, every so often, a 
+                            powerful warlord is able to unite the land under his
+                            banner, and during these times the other nations of 
+                            the world must combat the hordes of goblins, orcs, 
+                            and undead. The Black Steel Clans are not just 
+                            lumbering hordes, but also wield the dark magic of 
+                            necromancy and witchcraft. The Orc shamans wield 
+                            this terrible magic against their enemies.
+                        </p>
+                        <p>
+                            The Black Steel Clans have been the scourge of the 
+                            land. Every few decades, their true master emerges, 
+                            a powerful lich. Many wars have been fought to end 
+                            the lich, but so far no attempts have succeeded. The
+                            lich leads the Orc clans, along with hordes of the 
+                            undead to one day take everything over. It is the 
+                            Lich’s dark presence that has tainted these lands, 
+                            but it is also what gives this land strength. The 
+                            beats here have adapted to the dark energies, and 
+                            have evolved into monstrous creatures, ever 
+                            hungering for life. 
+                        </p>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="row">
+        <footer class="col-12 col-m-12">
+            <p>
+                Created by Luke Seeley | Weber State University CS 2350 | 
+                Summer 2019
+            </p>
+        </footer>
+        </div>
+    </body>
+</html> 

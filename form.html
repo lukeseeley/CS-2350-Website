@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Gaming Survey
+        </title>
+        <meta name="description" 
+              content="This is a survey to gathers the interest in different games">
+        <meta name="keywords" content="gaming, survey">
+        <meta name="author" content="Luke Seeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/icon_opt.jpg">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/form_style.css">
+        <script src="assets/form_script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src="assets/nav_script.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <header class="col-12 col-m-12 col-m-12">
+                <img src="assets/keyboard_header_opt.jpg" alt="Gaming Keyboard" 
+                height="200" width="150"> 
+                <p>Gaming <span>& Programming</span> Emporium</p>
+                <h1>Gaming Survey</h1>
+            </header>
+        </div>
+        
+        <div class="row">
+            <nav class="col-2 col-m-3">
+                <ul>
+                    <li><a href="index.html" 
+                    title="Go to the Home page of Gaming Emporium">Home</a></li>
+                    <li><a href="favoritegames.html" 
+                    title="Go to Gaming Emporium's page on my Favorite Games"> 
+                    Favorite Games</a></li>
+                    <li><a href="publishing.html" 
+                    title="Go to Gaming Emporium's tutorial on publishing websites on Icarus">
+                    How to Publish</a></li>
+                    <li>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                            <a href="css.html" 
+                            title="Go to Gaming Emporium's CSS tutorial">
+                            Adding CSS</a>
+                            <a href="story.html" 
+                            title="Go to Gaming Emporium's Interactive Story">
+                            Interactive Story</a>
+                            <a href="slideshow.html" 
+                            title="Go to Gaming Emporium's Artwork Showcase">
+                            Artwork Showcase</a>
+                            <a href="form.html" 
+                            title="Go to Gaming Emporium's Gaming Survey">
+                            Gaming Survey</a>
+                            <a href="animate.html" 
+                            title="Go to Gaming Emporium's Animated Faction Showcase">
+                            Faction Showcase</a>
+                        </div>
+                        <button id="navButton">More</button> 
+                    </div>
+                    </li>
+                </ul>
+                <div></div>
+            </nav>
+            <main class="col-10 col-m-9">
+                <p>
+                    This form is to gage interest in different platforms and 
+                    demographics in video games.
+                </p>
+                
+                <form method="post" 
+                action="http://icarus.cs.weber.edu/~linda/cs2350/submit.php">
+                    <h2>Basic Information</h2>
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </p>
+                    <p>
+                        <label for="age">Age Group</label>
+                        <select name="age" id="age">
+                            <option value="--">Select a Value</option>
+                            <option>Less than 13</option>
+                            <option>13 - 17</option>
+                            <option>18 - 25</option>
+                            <option>26 - 34</option>
+                            <option>35 - 45</option>
+                            <option>46 and Above</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="--">Select a Value</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>Other</option>
+                            <option>Prefer not to say</option>
+                        </select>
+                    </p>
+                    <h2>Time Spent</h2>
+                    <p>
+                        On average, how often would you say you play video
+                        games? This does include games that you can play on 
+                        smart devices, such as smart phones and tablets.
+                    </p>
+                    <p>
+                        <input type="radio" name="time_spent" id="none" 
+                        value="none">
+                        <label for="none">I don't play video games</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="time_spent" id="vLittle" 
+                        value="very little">
+                        <label for="vLittle">Once a month</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="time_spent" id="little" 
+                        value="little">
+                        <label for="little">A few times a month</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="time_spent" id="sometimes" 
+                        value="sometimes">
+                        <label for="sometimes">Once a week</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="time_spent" id="frequently" 
+                        value="frequently">
+                        <label for="frequently">Multiple times a week</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="time_spent" id="often" 
+                        value="often">
+                        <label for="often">Once a day</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="time_spent" id="vOften" 
+                        value="very often">
+                        <label for="vOften">Multiple times per day</label>
+                    </p>
+                    <h2>Preferred Platforms</h2>
+                    <fieldset>
+                        <legend>Select all that Apply</legend>
+                        <p>
+                            <input type="checkbox" id="xbox" name="xbox">
+                            <label for="xbox" class="checkbox">Xbox One</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="ps4" name="ps4">
+                            <label for="ps4" class="checkbox">Playstation 4
+                            </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="switch" name="switch">
+                            <label for="switch" class="checkbox">Switch</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="mobile" name="mobile">
+                            <label for="mobile" class="checkbox">Mobile</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="pc" name="pc">
+                            <label for="pc" class="checkbox">PC</label>
+                        </p>
+                        
+                    </fieldset>
+                    <fieldset id="pcPlatforms">
+                        <legend>Select PC platforms</legend>
+                        <p>
+                            <input type="checkbox" id="steam" name="steam">
+                            <label for="steam" class="checkbox">Steam</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="epic" name="epic">
+                            <label for="epic" class="checkbox">Epic Games Store
+                            </label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="gog" name="gog">
+                            <label for="gog" class="checkbox">GOG</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="other" name="other">
+                            <label for="other" class="checkbox">Other</label>
+                        </p>
+                    </fieldset>
+                    <h2>Money spent on Games</h2>
+                    <p>
+                        Would you say you just buy actual games, or do you buy
+                        other gaming products as well?
+                    </p>
+                    <div id="productChoice">
+                    <p>
+                        <input type="radio" name="products" id="noProducts" 
+                        value="No products">
+                        <label for="noProducts">I don't buy any gaming 
+                        products</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="products" id="justGames" 
+                        value="just games">
+                        <label for="justGames">Just Games</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="products" id="allProducts" 
+                        value="all products">
+                        <label for="allProducts">All gaming products</label>
+                    </p>
+                    </div>
+                    <fieldset id="games">
+                        <legend>Money spent on buying games</legend>
+                        <p>
+                            Buying new AAA releases are most often $60, though
+                            today the special editions can raise that price a
+                            lot higher, but for simplicity we will say $80.
+                            Please enter the number of AAA games you purchase a 
+                            year.
+                        </p>
+                        <p>
+                            <label for="AAAstdPre">AAA standard 
+                            preorders</label>
+                            <input type="text" id="AAAstdPre" 
+                            name="AAA_std_preorder" value="0" class="qty">
+                            <label class="cost" id="AAAstdPreCost">$60</label>
+                            <label for="AAAstdPreTotal" class="totalL">Total
+                            </label>
+                            <input type="text" id="AAAstdPreTotal" value="0"
+                            name="AAA_std_pre_total" readonly class="total">
+                        </p>
+                        <p>
+                            <label for="AAAsplPre">AAA special 
+                            preorders</label>
+                            <input type="text" id="AAAsplPre" 
+                            name="AAA_special_preorder" value="0" class="qty">
+                            <label class="cost" id="AAAsplPreCost">$80</label>
+                            <label for="AAAsplPreTotal" class="totalL">Total
+                            </label>
+                            <input type="text" id="AAAsplPreTotal" value="0"
+                            name="AAA_special_pre_total" readonly 
+                                   class="total">
+                        </p>
+                        <p>
+                            <label for="AAAstd">AAA standard purchases
+                            </label>
+                            <input type="text" id="AAAstd" 
+                            name="AAA_std" value="0" class="qty">
+                            <label class="cost" id="AAAstdCost">$60</label>
+                            <label for="AAAstdTotal" class="totalL">Total
+                            </label>
+                            <input type="text" id="AAAstdTotal" value="0"
+                            name="AAA_std_total" readonly class="total">
+                        </p>
+                        <p>
+                            <label for="AAAspl">AAA special 
+                            purchases</label>
+                            <input type="text" id="AAAspl" 
+                            name="AAA_special" value="0" class="qty">
+                            <label class="cost" id="AAAsplCost">$80</label>
+                            <label for="AAAsplTotal" class="totalL">Total
+                            </label>
+                            <input type="text" id="AAAsplTotal" value="0"
+                            name="AAA_special_total" readonly class="total">
+                        </p>
+                        <p>
+                            Indie games can vary wildly in price, but often go
+                            for $30, but they can be $15 as well, and on sale
+                            often go under $5. For simplicity we will average
+                            them to $15. Please enter the number of indie games
+                            you purchase a year.
+                        </p>
+                        <p>
+                            <label for="indiePre">Indie preorders</label>
+                            <input type="text" id="indiePre" 
+                            name="indie_preorders" value="0" class="qty">
+                            <label class="cost" id="indiePreCost">$15</label>
+                            <label for="indiePreTotal" class="totalL">Total
+                            </label>
+                            <input type="text" id="indiePreTotal" value="0"
+                            name="indie_pre_total" readonly class="total">
+                        </p>
+                        <p>
+                            <label for="indie">Indie purchases</label>
+                            <input type="text" id="indie" 
+                            name="indie" value="0" class="qty">
+                            <label class="cost" id="indieCost">$15</label>
+                            <label for="indieTotal" class="totalL">Total</label>
+                            <input type="text" id="indieTotal" value="0"
+                            name="indie_total" readonly class="total">
+                        </p>
+                        
+                    </fieldset>
+                    
+                    <fieldset id="otherProducts">
+                        <legend>Money spent on other Gaming Products</legend>
+                        <p>
+                            How much would you say you spend on gaming 
+                            accessories, such as controllers, gaming headsets,
+                            keyboards, mice, etc. in a year?
+                        </p>
+                        <p>
+                            <label for="gameAccesories">Gaming Accessories
+                            </label>
+                            <input type="text" id="gameAccesories" class="item" 
+                            name="Gaming Accessories" value="0.00">
+                        </p>
+                        <p>
+                            How much would you say you spend on gaming
+                            hardware, such as new consoles or PC parts and 
+                            laptops in a year?
+                        </p>
+                        <p>
+                            <label for="gameHardware">Gaming Hardware</label>
+                            <input type="text" id="gameHardware" class="item"
+                            name="Gaming Hardware" value="0.00">
+                        </p>
+                        <p>
+                            How much would you say you spend on gaming 
+                            merchandise, such as T-shirts, action figures, 
+                            posters, etc. in a year?
+                        </p>
+                        <p>
+                            <label for="gameMerchandise">Gaming Merchandise
+                            </label>
+                            <input type="text" id="gameMerchandise" 
+                            class="item" name="Gaming Merchandise" 
+                            value="0.00">
+                        </p>
+                        <p>
+                            How much would you say you spend on in game
+                            purchases, such as DLC (downloadable content), 
+                            microtransactions, and other purchasable in game
+                            content in a year?
+                        </p>
+                        <p>
+                            <label for="gameDLC">In Game Content 
+                            </label>
+                            <input type="text" id="gameDLC" 
+                            class="item" name="Game DLC" 
+                            value="0.00">
+                        </p>
+                    </fieldset>
+                    
+                    <fieldset id="totals">
+                        <legend>Totals</legend>
+                        <p>
+                            <label for="totalGames">Total games</label>
+                            <input type="text" id="totalGames" value="0"
+                            name="total_games" readonly class="total">
+                        </p>
+                        <p>
+                            <label for="totalGamesSpent">Total spent
+                            on games</label>
+                            <input type="text" id="totalGamesSpent" 
+                            value="0.00" name="total_spent_on_games" readonly 
+                            class="total">
+                        </p>
+                        <p>
+                            <label for="totalOther">Total spent
+                            on other</label>
+                            <input type="text" id="totalOther" value="0.00"
+                            name="total_spent_on_other" readonly class="total">
+                        </p>
+                        <p>
+                            <label for="total">Total spent</label>
+                            <input type="text" id="total" value="0.00"
+                            name="total" readonly class="total">
+                        </p>
+                    </fieldset>
+                    <input type="submit" id="submit" name="submit" 
+                    value="Submit">
+                </form>
+            </main>
+        </div>
+        <div class="row">
+        <footer class="col-12 col-m-12">
+            <p>
+                Created by Luke Seeley | Weber State University CS 2350 | 
+                Summer 2019
+            </p>
+        </footer>
+        </div>
+    </body>
+</html>        

@@ -1,0 +1,369 @@
+/* Color Schemes
+Dark blue:
+Lighest blue #578ED1
+Ligher  blue #326FB8
+Dark 	blue #26548C
+Darker  blue #183454
+Darkest blue #0E202F
+
+Orange:
+Lightest Orange #FFCF9E
+Lighter  Orange #FFAD5C
+Basic 	 Orange #FF8F20
+Darker 	 Orange #E67300
+Darkest  Orange #D16900
+*/ 
+
+@font-face {
+    font-family: comfortaa;
+    src: url(comfortaa_r.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: comfortaa;
+    src: url(comfortaa_b.ttf);
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(circuit_board_opt.png);
+    font-family: comfortaa;
+    color: #FF8F20;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #E67300;
+}
+
+a:link, a:visited {
+    color: #FFCF9E;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFAD5C;
+    text-decoration: underline
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+td, th {
+    border: groove 5px #578ED1;
+    background-color: #0E202F;
+    padding: 5px;
+}
+
+/*Mobile Layout */
+[class*="col-"] {
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    height: 165px;
+    background-color: #0E202F;
+}
+
+header p {
+    font-size: 1.6em;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0;
+    color: #E67300;
+    font-weight: bold;
+}
+
+header span {
+    display: none;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header img {
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+div .col-2, div .col-m-4 {
+    padding: 0;
+}
+
+nav {
+    background-color: #0E202F;
+    border-radius: 0 0 25px 25px;   
+}
+
+nav button {
+    outline: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li, nav button {
+    height: auto;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+}
+
+nav a, nav a:link, nav a:visited, nav button {
+    display: block;
+    color: #E67300;
+    background-color: #0E202F;
+    transition: 1s background-color, 1s color;
+    border-top: solid 2px #D16900;
+    font-size: 1em;
+}
+
+nav button{ 
+    border-radius: 0 0 25px 25px;
+    border: none;
+    border-top: solid 2px #D16900;
+    height: 50px;
+}
+
+/* This is now handled by jQuery
+nav .dropdown-content {
+    display: none;
+}
+
+nav .dropdown:hover .dropdown-content{
+    display: block;
+}
+*/
+
+nav .dropdown-content a, nav .dropdown-content a:link, nav .dropdown-content 
+a:visited {
+    background-color: #183454;
+    color: #FF8F20;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #326FB8;
+    color: #FFCF9E;
+}
+
+nav a:hover, nav button:hover, nav /* .dropdown:hover button*/ {
+    background-color: #26548C;
+    color: #FFAD5C;
+    text-decoration: none;
+}
+
+main section {
+    border: solid 4px #578ED1;
+    margin: 10px;
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #578ED1, -5px -5px 10px #578ED1;
+}
+
+main section:last-child {
+    margin-bottom: 10px;
+}
+
+main section img {
+    float: left;
+    width: 100px;
+    height: auto;
+    margin: 10px;
+}
+
+main section h2 {
+    height: 100px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+main section p {
+    clear: both;
+    margin-bottom: 0;
+}
+main section span {
+    display: none;
+}
+
+aside {
+    color: #E67300;
+    text-align: center;
+}
+
+aside h2 {
+    margin-top: 0px;
+}
+
+aside section {
+    padding-bottom: 20px;
+}
+
+aside section:last-child {
+    padding-bottom: 0;
+}
+
+aside img {
+    padding-bottom: 5px;
+    transition: background-color 1s;
+}
+
+aside img:hover {
+    background-color: #D16900;
+}
+
+aside hr {
+    border: solid 3px #578ED1;
+}
+
+footer {
+    text-align: center;
+    color: #D16900;
+    background-color: #0E202F;
+    margin-bottom: -48px;
+}
+
+/* Tablet Layout */
+@media only screen and (min-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+    
+    header p {
+        text-align: left;
+        padding-left: 150px;
+    }
+    
+    header h1 {
+        text-align: left;
+        padding-left: 150px;
+    }
+    
+    header span {
+        display: inline;
+    }
+    
+    nav a, nav a:link, nav a:visited, nav button {
+        border: none;
+    }
+    
+    main section h2 {
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+    
+    aside h3 {
+        height: 50px;
+        line-height: 25px;
+    }
+    
+    /* Grid System */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+/* Desktop Layout */
+@media only screen and (min-width: 992px) {
+    header {
+        height: 230px;
+    }
+    
+    header img {
+        width: 150px;
+    }
+
+    header p {
+        font-size: 2em;
+        padding-left: 200px;
+        padding-top: 20px;
+    }
+
+    header h1 {
+        padding-left: 200px;
+    }
+
+    main section img {
+        width: 150px;
+    }
+
+    main section h2 {
+        height: 150px;
+        line-height: 75px;
+        margin: 1em 0; 
+    }
+
+    main section {
+        border: solid 6px #578ED1;
+        margin: 20px;
+        margin-bottom: 60px;
+        padding: 15px;
+        box-shadow: 5px 5px 12px #578ED1, -5px -5px 12px #578ED1;
+    }
+    
+    main section span {
+        display: inline;
+    }
+
+    aside section {
+        padding-bottom: 24px;
+    }
+    
+    aside h3 {
+        height: auto;
+        line-height: normal;
+        margin: 1em 0;
+    }
+
+    /* Grid System */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+

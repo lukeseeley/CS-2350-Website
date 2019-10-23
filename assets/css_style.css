@@ -1,0 +1,214 @@
+/* Color Schemes
+Dark blue:
+Lighest blue #578ED1
+Ligher  blue #326FB8
+Dark 	blue #26548C
+Darker  blue #183454
+Darkest blue #0E202F
+
+Orange:
+Lightest Orange #FFCF9E
+Lighter  Orange #FFAD5C
+Basic 	 Orange #FF8F20
+Darker 	 Orange #E67300
+Darkest  Orange #D16900
+*/
+
+@font-face {
+    font-family: ME;
+    src: url(me123.ttf);
+}
+
+main section {
+    border: none;
+    box-shadow: none;
+    margin: 10px;
+}
+
+main section h2 {
+    line-height: normal;
+    height: auto;
+}
+
+div[class^="pad"] {
+    background-color: #26548C;
+    border: groove 5px #578ED1;
+    width: 480px;
+}
+
+[class^="pad"], [class^="margin"], [class^="hover"], [class^="pos"], 
+[class^="shade"] {
+    color: white;
+}
+
+.pad1 {
+    padding: 20px;
+}
+
+.pad2 {
+    padding: 20px 50px;
+}
+
+.pad3 {
+    padding: 100px 20px 40px 80px;
+}
+
+[class^="margin"] {
+    background-color: #D16900;
+    border: groove 5px #578ED1;
+    width: 400px;
+    padding: 10px;
+}
+
+.margin1 {
+    margin-left: 0;
+}
+
+.margin2 {
+    margin-left: 50px;
+}
+
+.margin3 {
+    margin-left: 140px;
+}
+
+[class^="hover"] {
+    background-color: #326FB8;
+    border: groove 4px #578ED1;
+    width: 480px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.hover2 {
+    transition: background-color 4s;
+}
+
+.hover2:hover {
+    background-color: #183454;
+}
+
+.hover3 {
+    transition: width 2s;
+}
+
+.hover3:hover {
+    width: 720px;
+}
+
+
+
+.contrast1 {
+    background-color: #CFFFCF;
+    color: #08306A
+}
+
+.contrast2 {
+    background-color: #505050;
+    color: #CFF555
+}
+
+.contrast3 {
+    background-color: #236523;
+    color: #E5FFE9
+}
+
+.contrast4 {
+    background-color: #5050C0;
+    color: #5FC055
+}
+
+.contrast5 {
+    background-color: #6A5F40;
+    color: #440000
+}
+
+[class^="pos"] {
+    border: groove 5px;
+    padding: 10px;
+    width: 420px;
+    background: #0E202F;
+    margin: 30px;
+}
+
+.posRel {
+    position: relative;
+    left: 200px;
+    top: 25px;
+}
+
+section .posAbs {
+    position: absolute;
+    bottom: 150px;
+    right: 20px;
+}
+
+.Dpos {
+    position: relative;
+    top: 5px;
+    margin-top: 250px;
+}
+
+.posFix {
+    position: fixed;
+    right: -20px;
+    bottom: 25px;
+}
+
+[class^="shade"] {
+    display: inline-block;
+    font-family: ME;
+    font-size: 3em;
+    margin: 30px;
+    width: 180px;
+    text-align: center;
+    text-shadow: 4px 3px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeH1 {
+    text-shadow: 4px 3px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeH2 {
+    text-shadow: 10px 3px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeH3 {
+    text-shadow: 20px 3px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeH4 {
+    text-shadow: -20px 3px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeV1 {
+    text-shadow: 4px 3px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeV2 {
+    text-shadow: 4px 10px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeV3 {
+    text-shadow: 4px 20px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeV4 {
+    text-shadow: 4px -20px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeB1 {
+    text-shadow: 4px 3px 5px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeB2 {
+    text-shadow: 4px 3px 10px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeB3 {
+    text-shadow: 3px 4px 20px #8F3340; /* Horizontal Vertical Blur */
+}
+
+.shadeB4 {
+    text-shadow: 4px 3px 30px #8F3340; /* Horizontal Vertical Blur */
+}

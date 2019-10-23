@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Artwork Showcase
+        </title>
+        <meta name="description" 
+              content="This is a showcase of some original artwork">
+        <meta name="keywords" content="art, showcase, slide show, original">
+        <meta name="author" content="Luke Seeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/icon_opt.jpg">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/ss_style.css">
+        <script src="assets/slideshow.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src="assets/nav_script.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <header class="col-12 col-m-12 col-m-12">
+                <img src="assets/keyboard_header_opt.jpg" alt="Gaming Keyboard"
+                height="200" width="150"> 
+                <p>Gaming <span>& Programming</span> Emporium</p>
+                <h1><span>Artwork</span> Showcase</h1>
+            </header>
+        </div>
+        
+        <div class="row">
+            <nav class="col-2 col-m-3">
+                <ul>
+                    <li><a href="index.html" 
+                    title="Go to the Home page of Gaming Emporium">Home</a></li>
+                    <li><a href="favoritegames.html" 
+                    title="Go to Gaming Emporium's page on my Favorite Games"> 
+                    Favorite Games</a></li>
+                    <li><a href="publishing.html" 
+                    title="Go to Gaming Emporium's tutorial on publishing websites on Icarus">
+                    How to Publish</a></li>
+                    <li>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                            <a href="css.html" 
+                            title="Go to Gaming Emporium's CSS tutorial">
+                            Adding CSS</a>
+                            <a href="story.html" 
+                            title="Go to Gaming Emporium's Interactive Story">
+                            Interactive Story</a>
+                            <a href="slideshow.html" 
+                            title="Go to Gaming Emporium's Artwork Showcase">
+                            Artwork Showcase</a>
+                            <a href="form.html" 
+                            title="Go to Gaming Emporium's Gaming Survey">
+                            Gaming Survey</a>
+                            <a href="animate.html" 
+                            title="Go to Gaming Emporium's Animated Faction Showcase">
+                            Faction Showcase</a>
+                        </div>
+                        <button id="navButton">More</button> 
+                    </div>
+                    </li>
+                </ul>
+                <div></div>
+            </nav>
+            <main class="col-10 col-m-9">
+                <p>
+                    Both me and my friend have collaborated on artwork for some
+                    of the passion projects we have worked on together.
+                    Although he is a much better artist than I am, we both have
+                    some artwork we would like to showcase. Following is a
+                    image showcase of some of our best work. As well as some of
+                    our earlier work. I hope that you enjoy our work.
+                </p>
+                <div id="gallery">
+                    <div id="spaceHolder"><img id="galleryImg" src="assets/asteriod_explore_opt.png"
+                    height="600" width="943" alt="Gallery Image">
+                    </div>
+                    <p id="galleryCaption">
+                        A view of a planet with an asteroid belt with starships
+                        in the distance, as well as a planet.
+                    </p>
+                    <h4 id="galleryAttribution">Created by Christopher Hayes</h4>
+                    <div id="galleryButtons" class="row">
+                        <div class="col-6 col-m-12">
+                        <button id="galleryPrevious">Previous</button>
+                        <button id="galleryNext">Next</button>
+                        </div>
+                        <div class="col-6 col-m-12">
+                        <button id="galleryPlay">Play</button>
+                        <button id="galleryStop">Pause</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="row">
+        <footer class="col-12 col-m-12">
+            <p>
+                Created by Luke Seeley | Weber State University CS 2350 | 
+                Summer 2019
+            </p>
+        </footer>
+        </div>
+    </body>
+</html>        

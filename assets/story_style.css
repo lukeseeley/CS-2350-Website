@@ -1,0 +1,67 @@
+/* Color Schemes
+Dark blue:
+Lighest blue #578ED1
+Ligher  blue #326FB8
+Dark 	blue #26548C
+Darker  blue #183454
+Darkest blue #0E202F
+
+Orange:
+Lightest Orange #FFCF9E
+Lighter  Orange #FFAD5C
+Basic 	 Orange #FF8F20
+Darker 	 Orange #E67300
+Darkest  Orange #D16900
+*/ 
+
+#input p {
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+input[type="text"] {
+    background-color: #0E202F;
+    color: #FFAD5C;
+    border: groove 5px #578ED1;
+    font-size: 1.2em;
+    height: 2em;
+    width: 175px;
+    padding: 2px 5px;
+}
+
+main #input button {
+    display: block;
+    width: 200px;
+    height: 45px;
+    margin: auto;
+    color: #FFAD5C;
+    background-color: #183454;
+    border: solid #578ED1 3px;
+    font-size: 1.2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+main #output [id*="p"] {
+    color: #FFCF9E;
+    font-weight: bold;
+}
+
+main section h2 {
+    height: auto;
+}

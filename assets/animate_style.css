@@ -1,0 +1,356 @@
+/* Color Schemes
+Dark blue:
+Lighest blue #578ED1
+Ligher  blue #326FB8
+Dark 	blue #26548C
+Darker  blue #183454
+Darkest blue #0E202F
+
+Orange:
+Lightest Orange #FFCF9E
+Lighter  Orange #FFAD5C
+Basic 	 Orange #FF8F20
+Darker 	 Orange #E67300
+Darkest  Orange #D16900
+
+Faction colors:
+Sylven:
+#2e8538 Lighter
+#26702f Green
+#1a4c20 Dark
+
+Arcanum:
+#1d5996 Ligher
+#14406b Blue
+#0c2641 Darker
+
+Imperium:
+#b30000 lighter
+#910000 Red
+#660000 Darker
+
+Steel:
+#31283e Lighter
+#221c2b Purple Black
+#0c0a0f Darker
+*/  
+
+/* Tab Section */
+.factionTab {
+    height: 120px;
+    
+}
+
+.factionTab div {
+    margin: auto;
+    width: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%
+}
+
+.factionTab img {
+    max-height: 100%;
+    width: auto;
+}
+
+#factionInfo {
+    color: white;
+}
+
+#factionInfo h2 {
+    color: white;
+}
+
+#choose {
+    color: #FF8F20;
+}
+
+#choose h2 {
+    color: #E67300;
+}
+
+[id*="sylven"] {
+    background-color: #26702f;
+}
+
+#sylvenTab {
+    transition: background-color 1s;
+    border: solid #1a4c20 4px;
+}
+
+#sylvenTab:hover {
+    background-color: #2e8538;
+}
+
+[id*="arcanum"] {
+    background-color: #14406b;
+    
+}
+
+#arcanumTab {
+    transition: background-color 1s;
+    border: solid #0c2641 4px;
+}
+
+#arcanumTab:hover {
+    background-color: #1d5996
+}
+
+[id*="imperium"] {
+    background-color: #910000;
+}
+
+#imperiumTab {
+    transition: background-color 1s;
+    border: solid #660000 4px;
+}
+
+#imperiumTab:hover {
+    background-color: #b30000;
+}
+
+[id*="steel"] {
+    background-color: #221c2b;
+
+}
+
+#steelTab {
+    transition: background-color 1s;
+    border: solid #0c0a0f 4px;
+}
+
+#steelTab:hover {
+    background-color: #31283e;
+}
+/* Animation Section */
+#factionAnimations {
+    height: 820px;
+    padding: 10px;
+    position: relative;
+    transition: height 1s;
+}
+
+[id$="Animation"] {
+    text-align: center;
+    height: 800px;
+    padding-top: 130px;
+    position: relative;
+}
+
+[id$="Animation"] img {
+    z-index: 3;
+    position: relative;
+}
+
+/*Sylven animation*/
+[id^="slybox"] {
+    position: absolute;
+    width: 5%;
+    height: 8%;
+    margin: 1%;
+    background: #1a4c20;
+    color: #1a4c20;
+}
+
+[id$="a"] {
+    left: 0;
+}
+
+[id$="b"] {
+    right: 0;
+}
+
+#slybox1a, #slybox1b {
+    top: 0;
+}
+
+#slybox2a, #slybox2b {
+    top: 10%;
+}
+
+#slybox3a, #slybox3b {
+    top: 20%;
+}
+
+#slybox4a, #slybox4b {
+    top: 30%;
+}
+
+#slybox5a, #slybox5b {
+    top: 40%;
+}
+
+#slybox6a, #slybox6b {
+    top: 50%;
+}
+
+#slybox6a, #slybox6b {
+    top: 50%;
+}
+
+#slybox7a, #slybox7b {
+    top: 60%;
+}
+
+#slybox8a, #slybox8b {
+    top: 70%;
+}
+
+#slybox9a, #slybox9b {
+    top: 80%;
+}
+
+#slybox10a, #slybox10b {
+    top: 90%;
+}
+
+
+/*Arcanum animation*/
+[id^=arcbox] {
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    right: 10px;
+    background-color: #0c2641;
+    text-align: right;
+    color: #0c2641;
+    z-index: 1;
+}
+
+
+#arcbox1 {
+    top: 100px;
+}
+
+#arcbox2 {
+    top: 300px;
+}
+
+#arcbox3 {
+    top: 500px;
+}
+
+#arcflare {
+    position: absolute;
+    opacity: 0.85;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+/* Imperium animation */
+[id^=impbox] {
+    width: 6%;
+    margin: 1%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background-color: #660000;
+    color: #660000 ;
+}
+
+#impbox1 {
+    left: 8.33%
+}
+
+#impbox2 {
+    left: 16.66%
+}
+
+#impbox3 {
+    left: 25%
+}
+
+#impbox4 {
+    left: 33.33%
+}
+#impbox5 {
+    left: 41.66%
+}
+#impbox6 {
+    left: 50%
+}
+#impbox7 {
+    left: 58.33%
+}
+#impbox8 {
+    left: 66.66%
+}
+#impbox9 {
+    left: 75%
+}
+#impbox10 {
+    left: 83.33%
+}
+#impbox11 {
+    left: 91.66%
+}
+
+/*Steel clans animation */
+[id^=steelbox] {
+    width: 6%;
+    margin: 1%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    background-color: #0c0a0f;
+    color: #0c0a0f ;
+}
+
+#steelbox1 {
+    left: 8.33%
+}
+
+#steelbox2 {
+    left: 16.66%
+}
+
+#steelbox3 {
+    left: 25%
+}
+
+#steelbox4 {
+    left: 33.33%
+}
+#steelbox5 {
+    left: 41.66%
+}
+#steelbox6 {
+    left: 50%
+}
+#steelbox7 {
+    left: 58.33%
+}
+#steelbox8 {
+    left: 66.66%
+}
+#steelbox9 {
+    left: 75%
+}
+#steelbox10 {
+    left: 83.33%
+}
+#steelbox11 {
+    left: 91.66%
+}
+/* Info Section */
+#factionInfo {
+    padding: 20px;
+}
+
+#factionInfo div {
+    padding: 20px;
+}
+
+#factionInfo h2 {
+    text-align: center;
+}
+
+#choose {
+    background-color: #183454;
+}

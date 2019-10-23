@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            How to Publish
+        </title>
+        <meta name="description" 
+        content="This page contains a tutorial on publishing web pages to Icarus">
+        <meta name="keywords"
+        content="publishing, filezilla, icarus, weber state, computer science, web page">
+        <meta name="author" content="Luke Seeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/icon_opt.jpg">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src="assets/nav_script.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <header class="col-12 col-m-12">
+                <img src="assets/keyboard_header_opt.jpg" alt="Gaming Keyboard"
+                height="200" width="150"> 
+                <p>Gaming <span>& Programming</span> Emporium</p>
+                <h1>Home Page</h1>
+            </header>
+        </div>
+        
+        <div class="row">
+            <nav class="col-2 col-m-3">
+                <ul>
+                    <li><a href="index.html" 
+                    title="Go to the Home page of Gaming Emporium">Home</a></li>
+                    <li><a href="favoritegames.html" 
+                    title="Go to Gaming Emporium's page on my Favorite Games"> 
+                    Favorite Games</a></li>
+                    <li><a href="publishing.html" 
+                    title="Go to Gaming Emporium's tutorial on publishing websites on Icarus">
+                    How to Publish</a></li>
+                    <li>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                            <a href="css.html" 
+                            title="Go to Gaming Emporium's CSS tutorial">
+                            Adding CSS</a>
+                            <a href="story.html" 
+                            title="Go to Gaming Emporium's Interactive Story">
+                            Interactive Story</a>
+                            <a href="slideshow.html" 
+                            title="Go to Gaming Emporium's Artwork Showcase">
+                            Artwork Showcase</a>
+                            <a href="form.html" 
+                            title="Go to Gaming Emporium's Gaming Survey">
+                            Gaming Survey</a>
+                            <a href="animate.html" 
+                            title="Go to Gaming Emporium's Animated Faction Showcase">
+                            Faction Showcase</a>
+                        </div>
+                        <button id="navButton">More</button> 
+                    </div>
+                    </li>
+                </ul>
+            </nav>
+        <main class="col-10 col-m-9">
+        <p>
+            Publishing websites can be a tricky thing. And while publishing 
+            web sites on the internet usually requires you to setup a server,
+            Weber State's school of Computer Science has set up an easy way to
+            publish your own sites on the internet. Icarus is a linux based 
+            server that allows you to host websites through the server. 
+            Removing the hassle of having to setup your own server, along with
+            finding a domain, among other things.
+        </p>
+        <h2>Uploading to the Icarus Web Server</h2>
+        <p>
+            While technically you could publish items to the Icarus server via
+            a command line environment, that would require a understanding of
+            Linux, and it is generally just easier to simply use a graphically
+            based File Transfer Client (FTP Tool). While there are certainly
+            many options for FTP tools out there, I personally use Filezilla
+            as my FTP client. In Filezilla, to connect to an FTP server, it
+            is really quite easy. First you need to enter a hostname of the
+            FTP server, in this case that being Icarus. The full hostname is
+            icarus.cs.weber.edu. Most of us a familiar with the .edu, that is
+            the top level domain, with with .cs being a sub domain of .weber,
+            and icarus is the device name. The next thing you need is your
+            username and password. Specifically your login information for
+            Icarus, for more information on this visit the
+            <a href="https://www.weber.edu/CS/tech-support.html" 
+            title="Go to the Technical Support page under the Weber State's CS department">
+            technical support</a> page. Filezilla will automatically pick the
+            most secure protocol and that protocols port to connect to the FTP
+            server, meaning you shouldn't need to enter in that information.
+        </p>
+        
+        <img src="assets/publish_public.png" 
+        alt="Connecting to server with Filezilla" width="800" height="612">
+        <p>
+            Once you are connected to the Icarus server with your FTP client,
+            you will be able to see what is in your accounts folder. To publish
+            your files, all you need to do is drag and drop as many files as
+            you want from your own computer directory as you would be able to
+            with your own file system, such as shift clicking multiple files.
+            This includes folders and sub folders. All files you want to
+            be published online can be placed inside the public html folder.
+        </p>
+        <img src="assets/publish_directory.png" 
+        alt="Viewing my file directory with Filezilla" width="800" height="604">
+        <img src="assets/publish_files.png" 
+        alt="Selecting files and directories with Filezilla" width="800" height="591">
+        <img src="assets/publish_tranfer.png" 
+        alt="Transferring files to server with Filezilla" width="800" height="602">
+        <h2>How to compose a URL connecting to your Icarus web pages</h2>
+        <p>
+            While I have talked a little about URL's when referring to 
+            hostnames. There are a few components to a URL to consider before
+            being able to access content from your webpage. Following is a list
+            of the different components of a URL for Icarus:
+        </p>
+        <ul>
+            <li>The protocol (http://), this is the protocol that web browsers
+            use to connect to a page. HTTP and HTTPS (with the S standing for 
+            secure) are the primary protocols for getting web pages</li> 
+            <li>The Hostname (icarus.cs.weber.edu) Like the hostname for 
+            logging into the FTP server, this hostname allows your web browser
+            to connect to the web page server</li>
+            <li>username (~ls40885) The username directs you to the specific
+            directory with your public HTML folder, this is the same username
+            as what you used to login to your FTP tool with.</li>
+            <li>Path (/la2/) This is the path to your specific folder in 
+            which you want your link to go to, meaning you can have layers
+            of folders if you want</li>
+            <li>filename (learning.html), this is the actual name of the HTML
+            file you want your link to take you to. If you leave this blank
+            your browser will automatically try to go to an index page.</li>
+        </ul>
+        
+        <h3>Example URLs</h3>
+        <p>http://icarus.cs.weber.edu/~ls40885/</p>
+        <img src="assets/urlpath_public.png" 
+        alt="Server URL path to public html folder" width="800">
+        <p>http://icarus.cs.weber.edu/~ls40885/pa2/wise.html</p>
+        <img src="assets/urlpath_wise.png" 
+        alt="Server URL path to wise.html under pa2 subfolder" width="800">
+        <p>http://icarus.cs.weber.edu/~ls40885/la2/</p>
+        <img src="assets/urlpath_la2.png" 
+        alt="Server URL path to la2 subfolder" width="800">
+        </main>
+        </div>
+        <div class="row">
+        <footer class="col-12 col-m-12">
+            <p>
+                Created by Luke Seeley | Weber State University CS 2350 | 
+                Summer 2019
+            </p>
+        </footer>
+        </div>
+    </body>
+</html>        

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Adding CSS to Web pages
+        </title>
+        <meta name="description" content="A tutorial on adding CSS to web pages">
+        <meta name="keywords" content="css, tutorial, web pages">
+        <meta name="author" content="Luke Seeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/icon_opt.jpg">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css_style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src="assets/nav_script.js"></script>
+    </head>
+    <body> 
+        <div class="row">
+            <header class="col-12 com-m-12">
+                <img src="assets/keyboard_header_opt.jpg" alt="Gaming Keyboard"
+                height="200" width="150"> 
+                <p>Gaming <span>& Programming</span> Emporium</p>
+                <h1>Home Page</h1>
+            </header>
+        </div>
+        
+        <div class="row">
+            <nav class="col-2 col-m-3">
+                <ul>
+                    <li><a href="index.html" 
+                    title="Go to the Home page of Gaming Emporium">Home</a></li>
+                    <li><a href="favoritegames.html" 
+                    title="Go to Gaming Emporium's page on my Favorite Games"> 
+                    Favorite Games</a></li>
+                    <li><a href="publishing.html" 
+                    title="Go to Gaming Emporium's tutorial on publishing websites on Icarus">
+                    How to Publish</a></li>
+                    <li>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                            <a href="css.html" 
+                            title="Go to Gaming Emporium's CSS tutorial">
+                            Adding CSS</a>
+                            <a href="story.html" 
+                            title="Go to Gaming Emporium's Interactive Story">
+                            Interactive Story</a>
+                            <a href="slideshow.html" 
+                            title="Go to Gaming Emporium's Artwork Showcase">
+                            Artwork Showcase</a>
+                            <a href="form.html" 
+                            title="Go to Gaming Emporium's Gaming Survey">
+                            Gaming Survey</a>
+                            <a href="animate.html" 
+                            title="Go to Gaming Emporium's Animated Faction Showcase">
+                            Faction Showcase</a>
+                        </div>
+                        <button id="navButton">More</button> 
+                    </div>
+                    </li>
+                </ul>
+            </nav>
+        
+        <main class="col-10 col-m-9">
+        <p>
+            CSS is a powerful tool for creating web pages. But there are many
+            properties to keep straight. This page will act as a guide through
+            the many systems and attributes that you can manipulate with CSS
+            to make your web page stunning.
+        </p>
+        <section>
+        <h2>CSS Box Model</h2>
+        <div class="pad1">
+            Padding Set: 20 pixels on all 4 sides. This is controlled by the
+            padding property in CSS. and looks like padding: 20px; Entering a
+            single number on this combined property sets all padding sides to
+            the value.
+        </div>
+        <div class="pad2">
+            Padding Set: 20 pixels on the top and bottom, and 50px on the left
+            and right. The CSS property looks like padding: 20px 50px; Entering
+            2 values will have the first value control the top and bottom
+            values, while the second one controls left and right values.
+        </div>
+        <div class="pad3">
+            Padding Set: 100px 20px 40px 80px, Each of the 4 numbers correlates
+            to a single side, starting from the top and then working around
+            clockwise from there. Each of the 4 values corresponds to a single
+            side.
+        </div>
+        <div class="margin1">
+            Margin Set: none, This is controlled with the CSS property margin,
+            though in this case we will only be using the left margin. Or
+            margin-left. The default is also none.
+        </div>
+        <div class="margin2">
+            Margin Set: 50px, as you can see the margin is the space around the
+            box, and the box has been pushed over from the left side. This
+            looks like: margin-left: 50px;
+        </div>
+        <div class="margin3">
+            Margin Set: 140px, as you can see that increasing the margin value
+            moved the margin much further. This looks like margin-left: 140px;
+        </div>
+        </section>
+        <section>
+        <h2>CSS Style on Hover</h2>
+        <p>
+            Before CSS, web pages were not responsive in design without adding
+            code. However CSS offers limited responsive design with the hover
+            hover property. This property allows you to have the appearance of
+            something change when the mouse is over the item. This can simply
+            have a color change, but you can potentially do a lot with this
+            simple feature. To set an element on hover you simply need: 
+            element:hover in your css. This becomes especially powerful when 
+            you use transitions and transformations.
+        </p>
+        <div class="hover1">
+            Hover Set: none, as you see nothing happens when you hover your
+            mouse over.
+        </div>
+        <div class="hover2">
+            Hover Set: Color, as you see, hovering your mouse over this slowly
+            shifts the color. This is done by setting the hover with a 
+            different color, and using a transition: background-color, not
+            in the same block as the hover.
+        </div>
+        <div class="hover3">
+            Hover Set: Width, as you can see, hovering your mouse over this
+            shifts the width of the box outwards. Similar to the color, you
+            simply change the width of the element in a element:hover section
+            in your css, and include a transition in the elements section.
+        </div>
+        </section>
+        <section>
+        <h2>Color Contrast</h2>
+        <table>
+            <tr>
+                <th>Text</th>
+                <th>Background Color</th>
+                <th>Text Color</th>
+                <th>Contrast Ratio</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td class="contrast1">This Text is Navy Blue on Light Blue</td>
+                <td>#CFFFCF</td>
+                <td>#08306A</td>
+                <td>11.49:1</td>
+                <td>AAA</td>
+            </tr>
+            <tr>
+                <td class="contrast2">This Text is Lime Green on Grey</td>
+                <td>#505050</td>
+                <td>#CFF555</td>
+                <td>6.46:1</td>
+                <td>AA</td>
+            </tr>
+            <tr>
+                <td class="contrast3">This Text is Light Gray on Dark 
+                Green</td>
+                <td>#236523</td>
+                <td>#E5FFE9</td>
+                <td>6.69:1</td>
+                <td>AA</td>
+            </tr>
+            <tr>
+                <td class="contrast4">This Text is Turquoise on Blue</td>
+                <td>#5050C0</td>
+                <td>#5FC055</td>
+                <td>2.81:1</td>
+                <td>None</td>
+            </tr>
+            <tr>
+                <td class="contrast5">This Text is Red on Gray Brown</td>
+                <td>#6A5F40</td>
+                <td>#440000</td>
+                <td>2.66:1</td>
+                <td>None</td>
+            </tr>
+        </table>
+        </section>
+        <section>
+        <h2>CSS Positioning</h2>
+        <p>
+            CSS positioning is a powerful tool to have an even greater control
+            over your web pages. Normally when you are designing web pages,
+            things are listed, but positioning allows you to control where
+            elements of your web page are placed. 
+        </p>
+        <div class="posRel">
+            This block of text is placed relatively. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+            
+        </div>
+        <p>
+            The block of text above is placed relatively. Relative position 
+            moves items relative to where the element would normally fit. As
+            you can see the block of text is moved, but the place where it
+            would be is still left open for the block of text. 
+        </p>
+        <div class="Dpos">
+        <div class="posAbs">
+            This block of text is placed absolutely.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        </div>
+        <p>
+            While it may be difficult to tell, the block above is placed
+            absolutely. Absolute does not reserve space for the element, and
+            its position is actually based on the parent object, in this case
+            the body of the page as a whole. The block of text is actually
+            being moved from the bottom of this paragraph up 150 pixels. 
+            Absolute positioning is great for giving you the highest level of 
+            control of where elements are positioned on your page.
+        </p>
+        </div>
+        <div class="posFix">
+            This block of text is placed as fixed. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        </div>
+        <p>
+            And lastly the block of text you have seen floating on the right 
+            side of the screen as you have scrolled down. That block of text is
+            placed in a fixed position. The position of which is based on the
+            actual view port of the page, rather than a position in the body
+            of the page, which is why the text follows you as you scroll down.
+            This would be most useful for things like navigation elements on 
+            your page.
+        </p>
+        </section>
+        <h2>CSS Shadows</h2>
+        <p>
+            Shadows are a powerful tool to creating parts of your page that 
+            really stand out. Shadows allow you to make text that looks almost 
+            3D, though it can be used on more than just text. But we are just
+            going to show you how you can use shadows on text. Shadows have 3
+            main properties which we can show you below. A horizontal value, a
+            vertical value, and a blur. 
+        </p>
+        <h3>Horizontal</h3>
+        <p>
+            As you can see below, horizontal value controls how far the shadow
+            moves relative to the text. With larger numbers moving the text
+            further and further from the actual text. You may also notice that
+            a shadow is little more than a copy of the text, with blur giving
+            it the actual appearance of being a shadow. But we will get to blur
+            later. A negative value would move the shadow in the opposite 
+            direction. As seen by the 4th N7 below. It does work differently 
+            for box shadows as opposed to the text shadows. With box shadows
+            This value does actually determine the size of the shadow.
+        </p>
+        <div class="shadeH1">N7</div>
+        <div class="shadeH2">N7</div>
+        <div class="shadeH3">N7</div>
+        <div class="shadeH4">N7</div>
+        <h3>Vertical</h3>
+        <p>
+            Similar to Horizontal, Vertical simply controls the distance the
+            shadow moves up or down from the actual text. And again you can
+            see that with larger values, it moves the shadow further from the
+            text. And negative values will instead move it in the opposite 
+            direction.
+        </p>
+        <div class="shadeV1">N7</div>
+        <div class="shadeV2">N7</div>
+        <div class="shadeV3">N7</div>
+        <div class="shadeV4">N7</div>
+        <h3>Blur</h3>
+        <p>
+            Instead of controlling the positioning of the shadow, blur instead
+            determines amount of pixels that are taken to diffuse the shadow.
+            Larger values allow the shadow to feather out more, creating those
+            more gradual shadows as opposed to harder edged shadows. And as 
+            you can see, as the value gets larger the shadows take up a lot
+            more room but end up looking more like a glow effect rather than
+            an actual shadow. But that could potentially be the effect you are
+            going for. Blur values cannot be negative, as it would not make
+            sense to have negative space used for the blur effect. As you can
+            see that it spreads the shadow out in all directions.
+        </p>
+        </main>
+        </div>
+        <div class="shadeB1">N7</div>
+        <div class="shadeB2">N7</div>
+        <div class="shadeB3">N7</div>
+        <div class="shadeB4">N7</div>
+        <div class="row">
+        <footer class="col-12 col-m-12">
+            <p>
+                Created by Luke Seeley | Weber State University CS 2350 | 
+                Summer 2019
+            </p>
+        </footer>
+        </div>
+    </body>
+</html> 

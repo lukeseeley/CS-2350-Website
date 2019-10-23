@@ -1,0 +1,101 @@
+/* Color Schemes
+Dark blue:
+Lighest blue #578ED1
+Ligher  blue #326FB8
+Dark 	blue #26548C
+Darker  blue #183454
+Darkest blue #0E202F
+
+Orange:
+Lightest Orange #FFCF9E
+Lighter  Orange #FFAD5C
+Basic 	 Orange #FF8F20
+Darker 	 Orange #E67300
+Darkest  Orange #D16900
+*/ 
+
+select {
+    color: #FFAD5C;
+    background-color: #26548C;
+    border: #326FB8 solid 1.5px;
+    padding: 4px;
+}
+
+input[type="text"], input[type="email"] {
+    color: #FF8F20;
+    background-color: #183454;
+    padding: 4px 8px;
+    border: #326FB8 solid 2px;
+    font-size: 1em;
+}
+
+fieldset {
+    border: #326FB8 solid 4px;
+    margin: 40px 0;
+    width: 75%;
+}
+
+input:focus {
+    outline: #326FB8 solid 2px;
+}
+
+label {
+    display: inline-block;
+    font-size: 1.12em;
+    font-weight: bold;
+}
+
+fieldset label {
+    text-align: right;
+    width: 250px;
+}
+
+.qty {
+    width: 50px;
+    text-align: center;
+}
+
+.cost {
+    width: 100px;
+    text-align: center;
+}
+
+input[type="radio"] {
+    margin-left: 50px;
+}
+
+.checkbox {
+    text-align: left;
+}
+
+.total{
+    width: 125px
+}
+
+.totalL {
+    width: 75px;
+    text-align: center;
+}
+
+.item {
+    width: 150px;
+}
+
+input[type="submit"] {
+    margin: 20px;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2em;
+    color: #FFAD5C;
+    background-color: #26548C;
+    border: #578ED1 solid;
+}
+
+input[type="submit"]:active {
+    background-color: #183454;
+    color: #FF8F20;
+}
+
+#pcPlatforms, #games, #otherProducts, #totals {
+    display: none;
+}

@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Lost in Space
+        </title>
+        <meta name="description" 
+        content="An interactive story with a space captain taking an interesting adventure to space">
+        <meta name="keywords" 
+        content="Interactive, Story, Space, Explore, Captain">
+        <meta name="author" content="Luke Seeley">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/icon_opt.jpg">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/story_style.css">
+        <script src="assets/story_script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+        </script>
+        <script src="assets/nav_script.js"></script>
+    </head>
+    <body>
+        <div class="row">
+            <header class="col-12 col-m-12 col-m-12">
+                <img src="assets/keyboard_header_opt.jpg" alt="Gaming Keyboard"
+                height="200" width="150"> 
+                <p>Gaming <span>& Programming</span> Emporium</p>
+                <h1>Interactive Story</h1>
+            </header>
+        </div>
+        
+        <div class="row">
+            <nav class="col-2 col-m-3">
+                <ul>
+                    <li><a href="index.html" 
+                    title="Go to the Home page of Gaming Emporium">Home</a></li>
+                    <li><a href="favoritegames.html" 
+                    title="Go to Gaming Emporium's page on my Favorite Games"> 
+                    Favorite Games</a></li>
+                    <li><a href="publishing.html" 
+                    title="Go to Gaming Emporium's tutorial on publishing websites on Icarus">
+                    How to Publish</a></li>
+                    <li>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                            <a href="css.html" 
+                            title="Go to Gaming Emporium's CSS tutorial">
+                            Adding CSS</a>
+                            <a href="story.html" 
+                            title="Go to Gaming Emporium's Interactive Story">
+                            Interactive Story</a>
+                            <a href="slideshow.html" 
+                            title="Go to Gaming Emporium's Artwork Showcase">
+                            Artwork Showcase</a>
+                            <a href="form.html" 
+                            title="Go to Gaming Emporium's Gaming Survey">
+                            Gaming Survey</a>
+                            <a href="animate.html" 
+                            title="Go to Gaming Emporium's Animated Faction Showcase">
+                            Faction Showcase</a>
+                        </div>
+                        <button id="navButton">More</button> 
+                    </div>
+                    </li>
+                </ul>
+                <div></div>
+            </nav>
+            <main class="col-10 col-m-9">
+                <section id="input">
+                    <h2>Creating Your Story</h2>
+                    <!--Paragraph 1-->
+                    <p>
+                        <label for="capName">Last Name</label>
+                        <input type="text" id="capName">
+                    </p>
+                    <p>
+                        <label for="adj1">Adjective</label>
+                        <input type="text" id="adj1">
+                    </p>
+                    <p>
+                        <label for="nou1">Noun</label>
+                        <input type="text" id="nou1">
+                    </p>
+                    <p>
+                        <label for="adj2">Adjective</label>
+                        <input type="text" id="adj2">
+                    </p>
+                    <p>
+                        <label for="lot1">Length of time</label>
+                        <input type="text" id="lot1">
+                    </p>
+                    <!--Paragraph 2-->
+                    <p>
+                        <label for="verb">Verb</label>
+                        <input type="text" id="verb">
+                    </p>
+                    <p>
+                        <label for="nou2">Noun</label>
+                        <input type="text" id="nou2">
+                    </p>
+                    <p>
+                        <label for="adj3">Adjective</label>
+                        <input type="text" id="adj3">
+                    </p>
+                    <p>
+                        <label for="emo1">Emotion</label>
+                        <input type="text" id="emo1">
+                    </p>
+                    <p>
+                        <label for="emo2">Emotion</label>
+                        <input type="text" id="emo2">
+                    </p>
+                    <p>
+                        <label for="adj4">Adjective</label>
+                        <input type="text" id="adj4">
+                    </p>
+                    <p>
+                        <label for="nou3">Plural Noun</label>
+                        <input type="text" id="nou3">
+                    </p>
+                    <p>
+                        <label for="anml">Animal</label>
+                        <input type="text" id="anml">
+                    </p>
+                    <p>
+                        <label for="emo3">Emotion</label>
+                        <input type="text" id="emo3">
+                    </p>
+                    <!--Paragraph 3-->
+                    <p>
+                        <label>Length of Time</label>
+                        <input type="text" id="lot2">
+                    </p>
+                    <p>
+                        <label for="lot3">Length of Time</label>
+                        <input type="text" id="lot3">
+                    </p>
+                    <p>
+                        <label for="food">Food</label>
+                        <input type="text" id="food">
+                    </p>
+                    <button onclick="printStory()">Submit Entries</button>
+                </section>
+                
+                <section id="output" class="hidden">
+                    <h2>The story you created</h2>
+                    <p>
+                        Captain <span id="pNam1">[lastname]</span> was a(n) 
+                        <span id="pAdj1">[adjective]</span> explorer of the  
+                        Interplanetary League of <span id="pNou1">[noun]</span>
+                        . With a mission to not only explore space, but to meet
+                        strange aliens on the frontier. Captain 
+                        <span id="pNam2">[lastname]</span> is a(n) 
+                        <span id="pAdj2">[adjective]</span> veteran, who has 
+                        served the league for over 
+                        <span id="pLot1">[length of time] </span>. And Captain 
+                        <span id="pNam3">[lastname]</span> has gone on many 
+                        missions over the course of their career. But none of 
+                        them compare to the captain's latest endeavor.
+                    </p>
+                    <p>
+                        Captain <span id="pNam4">[lastname]</span>'s last 
+                        mission seemed like any other. The mission was to set
+                        out into the <span id="pVerb">[verb]</span> 
+                        <span id="pNou2">[noun]</span>, when they arrived they 
+                        met some <span id="pAdj3">[adjective]</span> looking 
+                        aliens. They were <span id="pEmo1">[emotion]</span> at 
+                        first, but after the captain hailed them they became 
+                        <span id="pEmo2">[another emotion]</span>. Soon  after 
+                        the transmission began, they cut the the channel and
+                        began firing <span id="pAdj4">[adjective]</span> 
+                        <span id="pNou3">[plural noun]</span> at the Captain's 
+                        starship. The sudden attack left their ship crippled 
+                        and they crash landed on a nearby world. The strange 
+                        alien world was full of 
+                        <span id="pAnml">[animal]</span> like creatures that 
+                        seemed <span id="pEmo3">[emotion]</span> with the crew,
+                        but they stayed far away.
+                    </p>
+                    <p>
+                        After a grueling 
+                        <span id="pLot2">[length of time]</span>, the captain
+                        finally managed to establish communications back with 
+                        the league and call for rescue. But it was going to 
+                        take <span id="pLot3">[another length of time]</span> 
+                        before they would arrive. In the mean time the crew 
+                        would have to survive alone on 
+                        <span id="pFood">[food]</span>. Finally after 
+                        <span id="pLot4">[previous length of time]</span> the
+                        rescue finally came, and everyone was ready to go home.
+                    </p>
+                </section>
+            </main>
+        </div>
+        <div class="row">
+        <footer class="col-12 col-m-12">
+            <p>
+                Created by Luke Seeley | Weber State University CS 2350 | 
+                Summer 2019
+            </p>
+        </footer>
+        </div>
+    </body>
+</html>        
